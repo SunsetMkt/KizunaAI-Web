@@ -16,3 +16,8 @@
 
 # 开源许可
 GPLv3
+
+# TODO
+* [x] Android权限优化
+* [x] Web兼容性
+* [ ] 支持使用node命令行构建
