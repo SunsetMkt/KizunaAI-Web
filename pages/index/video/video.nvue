@@ -1,0 +1,42 @@
+<template>
+	<view
+		style="background-color: #F586A4;padding-top:25rpx;padding-left:10rpx;padding-bottom:50rpx;padding-right:10rpx;">
+		<view style="display: flex;align-items: center;flex-direction: row-reverse; height: 40rpx;">
+			<icon type="cancel" size="20" color="#FFF" @click="clo" />
+		</view>
+		<view style="display: flex;justify-content: center;align-items: center;margin-bottom: 20rpx;width: 100%;">
+			<view>
+				<text style="color: #FFFFFF;">{{day}}</text>
+			</view>
+		</view>
+		<view>
+			<web-view style="width: 80%;height: 700rpx;" :src="videourl"></web-view>
+		</view>
+	</view>
+</template>
+
+<script>
+	export default {
+		data() {
+			return {
+				day: '',
+				videourl: ''
+			}
+		},
+		onLoad() {
+			uni.$on('day', (e) => {
+				this.day = e.date
+				this.videourl = e.vu
+			})
+		},
+		methods: {
+			clo() {
+				uni.getSubNVueById('bili').hide()
+			}
+		}
+	}
+</script>
+
+<style>
+
+</style>

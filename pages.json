@@ -1,0 +1,115 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/start/start",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "Kizuna AI",
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": false,
+					"bounce": "none",
+					"pullToRefresh": {
+						"style": "circle",
+						"offset": "70px"
+					},
+					"subNVues": [{
+						"id": "bili", //原子窗体唯一标识
+						"path": "pages/index/video/video",
+						"type": "popup",
+						"style": {
+							"dock": "bottom",
+							"bottom": "50rpx",
+							"width": "100%",
+							"height": "880rpx"
+						}
+					}]
+				}
+			}
+		},
+		{
+			"path": "pages/login/loading",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+
+		}, {
+			"path": "pages/first/first",
+			"style": {
+				"navigationBarTitleText": "初次见面！我叫绊爱！",
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+
+			}
+		}, {
+			"path": "pages/index/video/video",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/login/loadingtwo",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/start/setbirthday",
+			"style": {
+				"navigationBarTitleText": "设置生日",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/index/setfirstpage/setfirstpage",
+			"style": {
+				"navigationBarTitleText": "设置开始页面",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/index/mbirthday/mbirthday",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/index/explain/explain",
+			"style": {
+				"navigationBarTitleText": "使用说明",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/index/video/vid",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "日历",
+		"navigationBarBackgroundColor": "#F586A4",
+		"backgroundColor": "#F586A4"
+	}
+}
