@@ -12,7 +12,7 @@
 * 生日彩蛋
 
 # 构建
-待补充
+目前仅支持HBuilderX，详见[uni-app文档](https://uniapp.dcloud.io/quickstart-hx.html)。
 
 # 开源许可
 GPLv3
