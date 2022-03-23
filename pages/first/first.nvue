@@ -21,7 +21,7 @@
 			}
 		},
 		onLoad() {
-			let wH = uni.getSystemInfoSync().windowHeight - 100 //获取屏幕高度
+			let wH = uni.getSystemInfoSync().windowHeight // - 100 //获取屏幕高度
 			this.winHeight = `${wH}px`
 		},
 		methods: {
