@@ -13,14 +13,26 @@ KizunaAI-Web是基于哔哩哔哩用户[灰暗江原](https://space.bilibili.com
 * 基于哔哩哔哩嵌入的早安视频
 * 日历和日期标签
 * 生日彩蛋
-* 支持node命令行构建
+* 支持Node.js命令行构建
 
 # 构建
 ~~目前仅支持HBuilderX~~，详见[uni-app文档](https://uniapp.dcloud.io/quickstart-hx.html)。
 
-## node命令行构建h5(Beta)
+## HBuilderX打开
 
-安装node版本14（开发环境v14.19.1）
+HBuilderX导入项目-文件夹导入-选择项目文件夹中的src文件夹
+
+### 关于src/index.html和public/index.html
+
+src/index.html也就是最初的index.html是由HBuilderX创建的，采用上面的方法打开项目就会默认使用它。
+
+public/index.html是在去除HBuilderX并向Node.js命令行构建模式迁移时创建的，在项目根目录下构建时会默认使用它。
+
+HBuilderX似乎隐藏了太多关于Vue.js框架和Node.js本身的细节，导致正在写这个文档的作者也有点不太明白。
+
+## Node.js命令行构建h5(Beta)
+
+安装Node.js版本14（开发环境v14.19.1）
 
 `npm install`
 
