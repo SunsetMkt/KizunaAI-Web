@@ -26,6 +26,15 @@
 
 `npm run build:h5`
 
+## CI/自动化构建设置
+
+以Vercel为例
+
+* 框架预设(framework preset)为`Vue.js`
+* 构建指令(build command)为`npm run build:h5`
+* 输出目录(output directory)为`dist/build/h5`
+* 安装指令(install command)为`npm install`
+
 # 开源许可
 GPLv3
 
