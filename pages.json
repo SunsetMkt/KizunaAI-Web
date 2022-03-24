@@ -11,7 +11,7 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "Kizuna AI",
+				"navigationBarTitleText": "KizunaAI-Web",
 				"navigationStyle": "custom",
 				"enablePullDownRefresh": false,
 				"app-plus": {

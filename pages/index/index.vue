@@ -4,7 +4,7 @@
 			<view>
 				<!--导航栏-->
 				<uni-nav-bar backgroundColor="#F586A4" shadow="true" rightIcon="bars" @clickRight="open" color="#FFFFFF"
-					title="Kizuna AI" />
+					title="KizunaAI-Web" />
 			</view>
 			<view class="box">
 				<!--日历-->
