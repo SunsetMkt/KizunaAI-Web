@@ -21,3 +21,8 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw*
+
+# HBuilderX files
+wxcomponents/**/*.vue
+wxcomponents/**/*.css
+.hbuilderx/
