@@ -6,10 +6,14 @@
 # 版权声明
 绊爱（Kizuna AI）是版权所属Kizuna AI Inc.（Kizuna AI株式会社）的虚拟形象，本项目及开发者与Kizuna AI Inc.无关。
 
+KizunaAI-Web是基于哔哩哔哩用户[灰暗江原](https://space.bilibili.com/63045280)开发的[KizunaAI](https://gitee.com/muyi456/KizunaAI)的Web兼容版并提供一定的修改。
+
 # 特性
+* 基于跨平台框架uni-app
 * 基于哔哩哔哩嵌入的早安视频
 * 日历和日期标签
 * 生日彩蛋
+* 支持node命令行构建
 
 # 构建
 ~~目前仅支持HBuilderX~~，详见[uni-app文档](https://uniapp.dcloud.io/quickstart-hx.html)。
