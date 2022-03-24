@@ -20,7 +20,7 @@
 
 `npm install`
 
-（注意不要使用cnpm指令，如果需要使用镜像则`npm install --registry=https://registry.npmmirror.com`）
+（**建议不要使用cnpm指令**，如果需要使用镜像则 `npm install --registry=https://registry.npmmirror.com`）
 
 `npm run dev:h5`
 
