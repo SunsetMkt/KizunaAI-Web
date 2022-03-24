@@ -15,7 +15,8 @@
 			<view class="tit">
 				<!--背景图片-->
 				<view class="backimg">
-					<image class="imgs" src="../../static/image/44a3a71f285c439e852b5fa3bb34f573.jpg"></image>
+					<image class="imgs" src="../../static/image/44a3a71f285c439e852b5fa3bb34f573.jpg" mode="aspectFit">
+					</image>
 					<view style="color: #8F939C;">{{info}}</view>
 					<view>
 						<!--悬浮按键-->
@@ -560,7 +561,7 @@
 			},
 			about() {
 				var text =
-					"本WebApp基于哔哩哔哩用户灰暗江原的开源项目修改。\n上游开源链接:\nhttps://gitee.com/muyi456/KizunaAI\n本项目开源链接:\nhttps://github.com/lwd-temp/KizunaAI-Web\n"
+					"KizunaAI-Web\n此WebApp基于哔哩哔哩用户灰暗江原的开源项目修改。\n上游开源链接:\nhttps://gitee.com/muyi456/KizunaAI\n此项目开源链接:\nhttps://github.com/lwd-temp/KizunaAI-Web\n"
 				uni.showModal({
 					title: '关于',
 					content: text,
