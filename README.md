@@ -16,11 +16,11 @@
 
 ## node命令行构建h5(Beta)
 
-安装node版本14
+安装node版本14（开发环境v14.19.1）
 
 `npm install`
 
-（**建议不要使用cnpm指令**，如果需要使用镜像则 `npm install --registry=https://registry.npmmirror.com`）
+（**建议不要使用cnpm指令，它在开发环境中造成了问题**，如果需要使用镜像则 `npm install --registry=https://registry.npmmirror.com`）
 
 `npm run dev:h5`
 
