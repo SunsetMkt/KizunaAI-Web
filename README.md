@@ -38,6 +38,10 @@
 # 开源许可
 GPLv3
 
+# FIXME
+* [ ] Web版第一次打开可能发生样式错误
+* [ ] 部分Android用户报告视频播放无声音，正在调查，怀疑系统Webview问题
+
 # TODO
 * [x] Android权限优化
 * [x] Web兼容性
