@@ -16,21 +16,21 @@ KizunaAI-Web是基于哔哩哔哩用户[灰暗江原](https://space.bilibili.com
 * 支持Node.js命令行构建
 
 # 构建
-~~目前仅支持HBuilderX~~，详见[uni-app文档](https://uniapp.dcloud.io/quickstart-hx.html)。
+~~目前仅支持HBuilder X~~，详见[uni-app文档](https://uniapp.dcloud.io/quickstart-hx.html)。
 
-## HBuilderX打开
+## HBuilder X打开
 
-HBuilderX导入项目-文件夹导入-选择项目文件夹中的src文件夹
+HBuilder X-文件-导入-从本地目录导入-选择项目文件夹中的src文件夹
 
 ### 关于src/index.html和public/index.html
 
-src/index.html也就是最初的index.html是由HBuilderX创建的，采用上面的方法打开项目就会默认使用它。
+src/index.html也就是最初的index.html是由HBuilder X创建的，采用上面的方法打开项目就会默认使用它。
 
-public/index.html是在去除HBuilderX并向Node.js命令行构建模式迁移时创建的，在项目根目录下构建时会默认使用它。
+public/index.html是在去除HBuilder X并向Node.js命令行构建模式迁移时创建的，在项目根目录下构建时会默认使用它。
 
-HBuilderX似乎隐藏了太多关于Vue.js框架和Node.js本身的细节，导致正在写这个文档的作者也有点不太明白。
+HBuilder X似乎隐藏了太多关于Vue.js框架和Node.js本身的细节，导致正在写这个文档的作者也有点不太明白。
 
-## Node.js命令行构建h5(Beta)
+## Node.js命令行构建H5(Beta)
 
 安装Node.js版本14（开发环境v14.19.1）
 
@@ -61,4 +61,4 @@ GPLv3
 # TODO
 * [x] Android权限优化
 * [x] Web兼容性
-* [x] 支持使用node命令行构建(Beta)
+* [x] 支持使用Node.js命令行构建(Beta)
