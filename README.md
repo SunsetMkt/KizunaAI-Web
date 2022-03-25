@@ -15,7 +15,7 @@ KizunaAI-Web是基于哔哩哔哩用户[灰暗江原](https://space.bilibili.com
 * 生日彩蛋
 * 支持Node.js命令行构建
 
-# 构建
+# 开发和构建
 ~~目前仅支持HBuilder X~~，详见[uni-app文档](https://uniapp.dcloud.io/quickstart-hx.html)。
 
 ## HBuilder X打开
@@ -61,7 +61,17 @@ GPLv3
 * * 正在调查，怀疑系统Webview问题
 * [x] Node.js命令行构建导致宽屏设备上的样式问题
 * * 已修复
+
 # TODO
 * [x] Android权限优化
 * [x] Web兼容性
 * [x] 支持使用Node.js命令行构建(Beta)
+
+# IDEA
+（这些设想可能永远都不会实现）
+
+* [ ] 基于three.js的绊爱3D模型动画
+* [ ] 基于three.js的可交互的绊爱3D模型
+* [ ] 基于three.js的可交互的有声绊爱3D模型
+* [ ] 基于音频自动拼接的绊爱早安
+* [ ] 基于three.js和音频自动拼接的绊爱早安动画
