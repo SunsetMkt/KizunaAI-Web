@@ -431,7 +431,7 @@
 				} else {
 					uni.showToast({
 						icon: "error",
-						title: "日期未选定或内部错误",
+						title: "日期未选定或未填写标签名",
 						duration: 2000
 					})
 					console.log(0)
