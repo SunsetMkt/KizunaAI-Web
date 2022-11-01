@@ -3,7 +3,7 @@
 
 [上游项目仓库](https://gitee.com/muyi456/KizunaAI)
 
-Demo地址：https://kizunaai.lwd-temp.top/
+Demo地址：https://kizuna-ai-web.vercel.app/
 
 # 版权声明
 绊爱（Kizuna AI）是版权所属Kizuna AI Inc.（Kizuna AI株式会社）的虚拟形象，本项目及开发者与Kizuna AI Inc.无关。
