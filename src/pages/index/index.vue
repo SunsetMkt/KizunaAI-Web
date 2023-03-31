@@ -40,7 +40,7 @@
 					<uni-list-item title="清除过期标签" clickable @click="del"></uni-list-item>
 					<uni-list-item title="使用说明" showArrow link to="explain/explain"></uni-list-item>
 					<uni-list-item title="绊爱百科" clickable link to="./baike/baike"></uni-list-item>
-					<uni-list-item title="关于软件" clickable @click="about"></uni-list-item>
+					<uni-list-item title="关于应用" clickable @click="about"></uni-list-item>
 				</uni-list>
 			</div>
 		</uni-popup>
