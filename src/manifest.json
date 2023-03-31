@@ -2,8 +2,8 @@
     "name" : "KizunaAI-Web",
     "appid" : "__UNI__XXXXXXX",
     "description" : "",
-    "versionName" : "1.2.0",
-    "versionCode" : 120,
+    "versionName" : "1.2.1",
+    "versionCode" : 121,
     "transformPx" : false,
     /* 5+App特有相关 */
     "app-plus" : {
@@ -31,7 +31,9 @@
                 "autoSdkPermissions" : false
             },
             /* ios打包配置 */
-            "ios" : {},
+            "ios" : {
+                "dSYMs" : false
+            },
             /* SDK配置 */
             "sdkConfigs" : {
                 "ad" : {}

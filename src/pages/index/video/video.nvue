@@ -1,6 +1,6 @@
 <template>
 	<view
-		style="background-color: #F586A4;padding-top:25rpx;padding-left:10rpx;padding-bottom:50rpx;padding-right:10rpx;">
+		style="background-color: #EE4F87;padding-top:25rpx;padding-left:10rpx;padding-bottom:50rpx;padding-right:10rpx;">
 		<view style="display: flex;align-items: center;flex-direction: row-reverse; height: 40rpx;">
 			<icon type="cancel" size="20" color="#FFF" @click="clo" />
 		</view>
@@ -24,6 +24,8 @@
 			}
 		},
 		onLoad() {
+			this.day = ""
+			this.videourl = ""
 			uni.$on('day', (e) => {
 				this.day = e.date
 				this.videourl = e.vu

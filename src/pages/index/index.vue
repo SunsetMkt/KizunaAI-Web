@@ -3,10 +3,10 @@
 		<view v-show="Vshow1" style="width: 100%;height: 100%;">
 			<view>
 				<!--导航栏-->
-				<uni-nav-bar backgroundColor="#F586A4" shadow="true" rightIcon="bars" @clickRight="open" color="#FFFFFF"
+				<uni-nav-bar backgroundColor="#EE4F87" shadow rightIcon="bars" @clickRight="open_right" color="#FFFFFF"
 					title="KizunaAI-Web" />
 			</view>
-			<view class="box">
+			<view class="box" id="lunc">
 				<!--日历-->
 				<lunc-calendar :showLunar="true" :showMonthBg="false" :shouChangeBtn="true" firstDayOfWeek="sunday"
 					:weekend="true" :signList="signList" @dayChange="dayChange">
@@ -15,7 +15,7 @@
 			<view class="tit">
 				<!--背景图片-->
 				<view class="backimg">
-					<image class="imgs" src="../../static/image/44a3a71f285c439e852b5fa3bb34f573.jpg" mode="aspectFit">
+					<image class="imgs" mode="aspectFill" src="../../static/image/44a3a71f285c439e852b5fa3bb34f573.jpg">
 					</image>
 					<view style="color: #8F939C;">{{info}}</view>
 					<view>
@@ -39,7 +39,8 @@
 					<uni-list-item title="修改生日" showArrow link to="mbirthday/mbirthday"></uni-list-item>
 					<uni-list-item title="清除过期标签" clickable @click="del"></uni-list-item>
 					<uni-list-item title="使用说明" showArrow link to="explain/explain"></uni-list-item>
-					<uni-list-item title="关于" clickable @click="about"></uni-list-item>
+					<uni-list-item title="绊爱百科" clickable link to="./baike/baike"></uni-list-item>
+					<uni-list-item title="关于软件" clickable @click="about"></uni-list-item>
 				</uni-list>
 			</div>
 		</uni-popup>
@@ -117,7 +118,7 @@
 					}
 				],
 				pattren: {
-					'buttonColor': '#F586A4'
+					'buttonColor': '#EE4F87'
 				},
 				mark_show: false,
 				datetimerange: [],
@@ -128,6 +129,10 @@
 			}
 		},
 		onLoad() {
+			let wW = uni.getSystemInfoSync().windowWidth
+			let wH = uni.getSystemInfoSync().windowHeight
+			//this.winWidth = `${wW}px`
+			//this.winHeight = `${wH}px`
 			this.renovate()
 		},
 		//监听页面返回videoList
@@ -259,7 +264,7 @@
 				plus.runtime.quit()
 			},
 			//弹出层
-			open() {
+			open_right() {
 				this.$refs.pop.open()
 			},
 			//switch切换
@@ -317,7 +322,7 @@
 							})
 							uni.setStorageSync("markList", new_markday)
 							this.signList = new_markday
-							//uni.getSubNVueById('bili').close()//关闭原子窗口
+							//uni.getSubNVueById('bili').close() //关闭原子窗口
 							uni.showToast({
 								icon: "success",
 								title: "已清除",
@@ -357,7 +362,7 @@
 										})
 										uni.setStorageSync("markList", markday)
 										that.signList = markday
-										//uni.getSubNVueById('bili').close()//关闭原子窗口
+										//uni.getSubNVueById('bili').close() //关闭原子窗口
 										uni.showToast({
 											icon: "success",
 											title: "已删除",
@@ -386,10 +391,9 @@
 								}
 							})
 						}
-						break
 						//刷新页面
 					case 2:
-						console.log("刷新")
+						//uni.getSubNVueById('bili').close() //关闭原子窗口
 						uni.navigateTo({
 							url: "../index/index"
 						})
@@ -424,7 +428,7 @@
 						title: "设置成功",
 						duration: 2000
 					})
-					//uni.getSubNVueById('bili').close()//关闭原子窗口
+					//uni.getSubNVueById('bili').close() //关闭原子窗口
 					uni.navigateTo({
 						url: "../index/index"
 					})
@@ -593,7 +597,6 @@
 		align-items: center;
 		justify-content: center;
 		position: relative;
-
 	}
 
 	.quitView {

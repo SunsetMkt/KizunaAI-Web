@@ -2,7 +2,7 @@
 	<view>
 		<view>
 			<!--导航栏-->
-			<uni-nav-bar backgroundColor="#F586A4" shadow="true" rightIcon="arrow-right" @clickRight="skip"
+			<uni-nav-bar backgroundColor="#EE4F87" shadow="true" rightIcon="arrow-right" @clickRight="skip"
 				color="#FFFFFF" title="Hello World" />
 		</view>
 		<view>
