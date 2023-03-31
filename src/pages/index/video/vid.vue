@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<web-view :style="{'height': winHeight}" :src="videourl"></web-view>
+		<web-view :style="{'height': winHeight}" :src="videourl" :sandbox="sandbox" :allow="allow"></web-view>
 	</view>
 </template>
 
@@ -19,6 +19,8 @@
 			console.log(conf)
 			this.day = conf.date
 			this.videourl = conf.vu
+			this.sandbox = "allow-top-navigation allow-same-origin allow-forms allow-scripts" //禁止弹出网页，这么写可能会warning
+			this.allow = "allowfullscreen" //允许iframe全屏，好像没用
 		}
 	}
 </script>
