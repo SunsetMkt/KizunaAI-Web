@@ -5,6 +5,8 @@
 
 Demo地址：https://kizuna-ai-web.vercel.app/
 
+**此修改版仅支持H5。如有构建App的需要，请使用上游项目。**
+
 # 版权声明
 绊爱（Kizuna AI）是版权所属Kizuna AI Inc.（Kizuna AI株式会社）的虚拟形象，本项目及开发者与Kizuna AI Inc.无关。
 
