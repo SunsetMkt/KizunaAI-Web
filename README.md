@@ -55,25 +55,3 @@ HBuilder X似乎隐藏了太多关于Vue.js框架和Node.js本身的细节，导
 
 # 开源许可
 GPLv3
-
-# FIXME
-* [x] Web版第一次打开可能发生样式错误
-* * 无解
-* [ ] 部分Android用户报告视频播放无声音
-* * 正在调查，怀疑系统Webview问题
-* [x] Node.js命令行构建导致宽屏设备上的样式问题
-* * 已修复
-
-# TODO
-* [x] Android权限优化
-* [x] Web兼容性
-* [x] 支持使用Node.js命令行构建(Beta)
-
-# IDEA
-（这些设想可能永远都不会实现）
-
-* [ ] 基于three.js的绊爱3D模型动画
-* [ ] 基于three.js的可交互的绊爱3D模型
-* [ ] 基于three.js的可交互的有声绊爱3D模型
-* [ ] 基于VITS的绊爱早安
-* [ ] 基于three.js和VITS的绊爱早安动画
