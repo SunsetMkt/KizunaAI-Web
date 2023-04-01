@@ -391,6 +391,7 @@
 								}
 							})
 						}
+						break //不要删除这行，否则会破坏uni.showModal的显示
 						//刷新页面
 					case 2:
 						//uni.getSubNVueById('bili').close() //关闭原子窗口
