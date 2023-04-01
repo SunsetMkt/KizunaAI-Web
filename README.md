@@ -57,3 +57,6 @@ HBuilder X似乎隐藏了太多关于Vue.js框架和Node.js本身的细节，导
 
 # 开源许可
 GPLv3
+
+# 参考资料
+http://www.jmblog.com.cn/article/6210be047ca2731bb9b639c8
