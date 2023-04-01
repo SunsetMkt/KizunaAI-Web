@@ -135,7 +135,25 @@ module.exports = {
       workboxPluginMode: 'GenerateSW',
       workboxOptions: {
         clientsClaim: true,
-        importWorkboxFrom: 'local'
+        importWorkboxFrom: 'local',
+        runtimeCaching: [
+          {
+            urlPattern: /\.(mp3)$/,
+            handler: 'cacheFirst',
+          },
+          {
+            urlPattern: /\.(png)$/,
+            handler: 'cacheFirst',
+          },
+          {
+            urlPattern: /\.(css)$/,
+            handler: 'cacheFirst',
+          },
+          {
+            urlPattern: /\.(jpg)$/,
+            handler: 'cacheFirst',
+          },
+        ],
       },
     }
   }
