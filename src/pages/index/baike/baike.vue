@@ -3,70 +3,73 @@
 		<view>
 			<!--导航栏-->
 			<uni-nav-bar backgroundColor="#EE4F87" shadow fixed leftText="返回" rightText="回到顶部" color="#FFFFFF"
-				title="绊爱百科" @clickRight="back_top" @clickLeft="back_page" />
+				title="绊爱百科" @clickRight="goTop" @clickLeft="back_page" />
 		</view>
 		<!--背景图片-->
 		<image class="imgs" mode="aspectFill" src="../../../static/image/2.jpg"></image>
-		<view class="text_padding">
-			<text style="font-size: 25rpx;">仅记录部分内容,详细可查询</text>
-			<span><uni-link href="https://mzh.moegirl.org.cn/绊爱" text="萌娘百科"></uni-link></span>
-		</view>
-		<view class="text_padding">
-			<uni-title type="h3" title="基本资料"></uni-title>
-			<view v-for="(item,index) in content" :key="index">
-				<uni-row :gutter="24">
-					<uni-col :span="5">
-						<text class="title">{{item.name}}</text>
-					</uni-col>
-					<uni-col :span="19">
-						<text>{{item.text}}</text>
-					</uni-col>
-				</uni-row>
+		<scroll-view scroll-y="true" class="scroll-Y" :scroll-top="scrollTop" :style="{ 'height': Height + 'px' }"
+			@scroll="scroll">
+			<view class="text_padding">
+				<text style="font-size: 25rpx;">仅记录部分内容,详细可查询</text>
+				<span><uni-link href="https://mzh.moegirl.org.cn/绊爱" text="萌娘百科"></uni-link></span>
 			</view>
-		</view>
+			<view class="text_padding">
+				<uni-title type="h3" title="基本资料"></uni-title>
+				<view v-for="(item,index) in content" :key="index">
+					<uni-row :gutter="24">
+						<uni-col :span="5">
+							<text class="title">{{item.name}}</text>
+						</uni-col>
+						<uni-col :span="19">
+							<text>{{item.text}}</text>
+						</uni-col>
+					</uni-row>
+				</view>
+			</view>
 
-		<view class="text_padding">
-			<uni-title type="h3" title="大事记"></uni-title>
-			<uni-title type="h4" title="2016"></uni-title>
-			<uni-steps :options="major_events_2016" :active="active" direction="column" />
-			<uni-title type="h4" title="2017"></uni-title>
-			<uni-steps :options="major_events_2017" :active="active" direction="column" />
-			<uni-title type="h4" title="2018"></uni-title>
-			<uni-steps :options="major_events_2018" :active="active" direction="column" />
-			<uni-title type="h4" title="2019"></uni-title>
-			<uni-steps :options="major_events_2019" :active="active" direction="column" />
-			<uni-title type="h4" title="2020"></uni-title>
-			<uni-steps :options="major_events_2020" :active="active" direction="column" />
-			<uni-title type="h4" title="2021"></uni-title>
-			<uni-steps :options="major_events_2021" :active="active" direction="column" />
-			<uni-title type="h4" title="2022"></uni-title>
-			<uni-steps :options="major_events_2022" :active="active" direction="column" />
-		</view>
-		<view class="text_padding">
-			<uni-title type="h3" title="音乐作品"></uni-title>
-			<uni-title type="h4" title="专辑"></uni-title>
-			<uni-table border stripe>
-				<uni-tr>
-					<uni-th align="center">专辑名</uni-th>
-					<uni-th align="center">发售日期</uni-th>
-				</uni-tr>
-				<uni-tr v-for="(item, index) in album" :key="index">
-					<uni-td align="center">{{item.name}}</uni-td>
-					<uni-td align="center">{{item.time}}</uni-td>
-				</uni-tr>
-			</uni-table>
-			<uni-title type="h4" title="单曲"></uni-title>
-			<uni-table border stripe emptyText="暂无更多数据">
-				<uni-tr>
-					<uni-th align="center">专辑名</uni-th>
-					<uni-th align="center">发售日期</uni-th>
-				</uni-tr>
-				<uni-tr v-for="(item, index) in music" :key="index">
-					<uni-td align="center">{{item.name}}</uni-td>
-					<uni-td align="center">{{item.time}}</uni-td>
-				</uni-tr>
-			</uni-table>
-		</view>
+			<view class="text_padding">
+				<uni-title type="h3" title="大事记"></uni-title>
+				<uni-title type="h4" title="2016"></uni-title>
+				<uni-steps :options="major_events_2016" :active="active" direction="column" />
+				<uni-title type="h4" title="2017"></uni-title>
+				<uni-steps :options="major_events_2017" :active="active" direction="column" />
+				<uni-title type="h4" title="2018"></uni-title>
+				<uni-steps :options="major_events_2018" :active="active" direction="column" />
+				<uni-title type="h4" title="2019"></uni-title>
+				<uni-steps :options="major_events_2019" :active="active" direction="column" />
+				<uni-title type="h4" title="2020"></uni-title>
+				<uni-steps :options="major_events_2020" :active="active" direction="column" />
+				<uni-title type="h4" title="2021"></uni-title>
+				<uni-steps :options="major_events_2021" :active="active" direction="column" />
+				<uni-title type="h4" title="2022"></uni-title>
+				<uni-steps :options="major_events_2022" :active="active" direction="column" />
+			</view>
+			<view class="text_padding">
+				<uni-title type="h3" title="音乐作品"></uni-title>
+				<uni-title type="h4" title="专辑"></uni-title>
+				<uni-table border stripe>
+					<uni-tr>
+						<uni-th align="center">专辑名</uni-th>
+						<uni-th align="center">发售日期</uni-th>
+					</uni-tr>
+					<uni-tr v-for="(item, index) in album" :key="index">
+						<uni-td align="center">{{item.name}}</uni-td>
+						<uni-td align="center">{{item.time}}</uni-td>
+					</uni-tr>
+				</uni-table>
+				<uni-title type="h4" title="单曲"></uni-title>
+				<uni-table border stripe emptyText="暂无更多数据">
+					<uni-tr>
+						<uni-th align="center">专辑名</uni-th>
+						<uni-th align="center">发售日期</uni-th>
+					</uni-tr>
+					<uni-tr v-for="(item, index) in music" :key="index">
+						<uni-td align="center">{{item.name}}</uni-td>
+						<uni-td align="center">{{item.time}}</uni-td>
+					</uni-tr>
+				</uni-table>
+			</view>
+		</scroll-view>
 	</view>
 </template>
 
@@ -74,6 +77,9 @@
 	export default {
 		data() {
 			return {
+				Height: 0,
+				scrollTop: 0,
+				oldScrollTop: 0,
 				content: [{
 						name: '本名',
 						text: 'Kizuna AI'
@@ -434,7 +440,33 @@
 				uni.redirectTo({
 					url: '/pages/index/index'
 				})
+			},
+			scroll(e) {
+				//记录scroll位置
+				//https://blog.csdn.net/qq_38998250/article/details/108663438
+				this.oldScrollTop = e.detail.scrollTop
+			},
+			goTop(e) {
+				//视图会发生重新渲染
+				this.scrollTop = this.oldScrollTop
+				//当视图渲染结束 重新设置为0
+				this.$nextTick(() => {
+					this.scrollTop = 0
+				});
+				//uni.showToast({
+				//	icon: "none",
+				//	title: "纵向滚动 scrollTop 值已被修改为 0"
+				//})
 			}
+		},
+		onLoad(options) {
+			uni.getSystemInfo({
+				success: (res) => {
+					this.Height = res.windowHeight - 0;
+					console.log(this.Height)
+					//this.Height 就是实际给容器的高度是多少
+				}
+			})
 		}
 	}
 </script>
