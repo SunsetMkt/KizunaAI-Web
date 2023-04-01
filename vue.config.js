@@ -135,6 +135,7 @@ module.exports = {
       workboxPluginMode: 'GenerateSW',
       workboxOptions: {
         clientsClaim: true,
+        importWorkboxFrom: 'local'
       },
     }
   }
