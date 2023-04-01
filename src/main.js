@@ -8,12 +8,18 @@ const app = new Vue({
 	...App
 })
 app.$mount()
+
 // #endif
 
 // #ifdef VUE3
 import {
 	createSSRApp
 } from 'vue'
+
+// #ifdef H5
+import './registerServiceWorker'
+// #endif
+
 export function createApp() {
 	const app = createSSRApp(App)
 	return {
