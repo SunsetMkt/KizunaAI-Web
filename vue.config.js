@@ -139,19 +139,19 @@ module.exports = {
         runtimeCaching: [
           {
             urlPattern: /\.(mp3)$/,
-            handler: 'cacheFirst',
+            handler: 'staleWhileRevalidate',
           },
           {
             urlPattern: /\.(png)$/,
-            handler: 'cacheFirst',
+            handler: 'staleWhileRevalidate',
           },
           {
             urlPattern: /\.(css)$/,
-            handler: 'cacheFirst',
+            handler: 'staleWhileRevalidate',
           },
           {
             urlPattern: /\.(jpg)$/,
-            handler: 'cacheFirst',
+            handler: 'staleWhileRevalidate',
           },
         ],
       },
