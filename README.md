@@ -1,5 +1,5 @@
 # KizunaAI-Web
-基于uni-app的绊爱主题日历，兼容H5
+基于uni-app的绊爱主题日历，兼容H5，支持PWA。
 
 [上游项目仓库](https://gitee.com/muyi456/KizunaAI)
 
