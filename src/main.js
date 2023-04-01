@@ -16,14 +16,14 @@ import {
 	createSSRApp
 } from 'vue'
 
-// #ifdef H5
-import './registerServiceWorker'
-// #endif
-
 export function createApp() {
 	const app = createSSRApp(App)
 	return {
 		app
 	}
 }
+// #endif
+
+// #ifdef H5
+import './registerServiceWorker'
 // #endif

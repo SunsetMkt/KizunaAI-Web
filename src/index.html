@@ -35,18 +35,6 @@
         </noscript>
         <div id="app"></div>
         <!-- built files will be auto injected -->
-        <script type="text/javascript">
-			if ("serviceWorker" in navigator && 'PushManager' in window ) {
-				window.addEventListener('load', async () => { // 这个load 可以删除 如果你的浏览器没加载出来 可以添加一下这个
-					navigator.serviceWorker.register("./service-worker.js").then(function (registration) {
-					});
-				})
-			}
-		</script>
-        <!--
-            https://juejin.cn/post/7125635941397430286
-            无论如何，service-worker.js都没有被自动添加到这里，所以手动添加。
-        -->
     </body>
 
 </html>
