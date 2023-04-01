@@ -107,6 +107,7 @@
     "h5" : {
         "router" : {
             "base" : "./"
-        }
+        },
+        "template" : "index.html"
     }
 }

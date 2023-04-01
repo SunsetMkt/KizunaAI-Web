@@ -28,11 +28,11 @@ HBuilder X-文件-导入-从本地目录导入-选择项目文件夹中的src文
 
 ### 关于src/index.html和public/index.html
 
+它们是`index.html`模板，应该保持内容一致。
+
 src/index.html也就是最初的index.html是由HBuilder X创建的，采用上面的方法打开项目就会默认使用它。
 
 public/index.html是在去除HBuilder X并向Node.js命令行构建模式迁移时创建的，在项目根目录下构建时会默认使用它。
-
-HBuilder X似乎隐藏了太多关于Vue.js框架和Node.js本身的细节，导致正在写这个文档的作者也有点不太明白。
 
 ## Node.js命令行构建H5(Beta)
 
