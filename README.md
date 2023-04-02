@@ -64,3 +64,7 @@ http://www.jmblog.com.cn/article/6210be047ca2731bb9b639c8
 https://www.zklighting.ltd/?p=1214
 
 https://ask.dcloud.net.cn/question/89143
+
+# 已知问题
+* [ ] 在Apple设备上，离线UWP功能似乎工作不正常。
+
