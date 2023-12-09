@@ -55,6 +55,8 @@ public/index.html是在去除HBuilder X并向Node.js命令行构建模式迁移�
 * 输出目录(output directory)为`dist/build/h5`
 * 安装指令(install command)为`npm install`
 
+Vercel已不再支持Node.js 14.x
+
 # 开源许可
 GPLv3
 
